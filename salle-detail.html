@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détails de la salle - RECEPT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">RECEPT</div>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="Voir salle .html">Salles</a>
+      <a href="About.html">À propos</a>
+      <a href="Historique.html">Historique</a>
+      <a href="favoris.html">Favoris</a>
+      <a href="louees.html">Salles louées</a>
+    </div>
+    <div class="nav-actions">
+      <div class="favorite-icon">
+        <span>❤️</span>
+        <span class="favorite-count">0</span>
+      </div>
+      <a href="login.html" class="btn-login">Connexion</a>
+      <a href="signup.html" class="btn-register">Inscription</a>
+    </div>
+  </nav>
+
+  <div class="salle-detail-page">
+    <div class="salle-detail-container">
+      <div class="salle-detail-gallery">
+        <img src="./Images/table-setting-791148.jpg" alt="Salle de réception" class="salle-detail-main-image">
+        <div class="salle-detail-thumbnails">
+          <img src="./Images/table-setting-791148.jpg" alt="Vue 1">
+          <img src="./Images/table-setting-6859276.jpg" alt="Vue 2">
+          <img src="./Images/tables-2181979.jpg" alt="Vue 3">
+          <img src="./Images/table-5696243.jpg" alt="Vue 4">
+        </div>
+
+        <div class="salle-detail-info">
+          <h1>La Grange de Montmartre</h1>
+          <p class="salle-detail-location">📍 1 rue du Général Taupin, 60810 Barbery</p>
+          
+          <div class="salle-detail-rating">
+            <div class="stars">★★★★☆</div>
+            <span>2 avis clients</span>
+          </div>
+
+          <div class="salle-detail-sections">
+            <div class="salle-detail-section">
+              <h2>Présentation</h2>
+              <p>Ouverte toute l'année pour vos événements privés et professionnels, cette salle séduit ceux qui aiment la campagne près de la ville, le confort et le charme. Un cadre idyllique pour vos réceptions.</p>
+            </div>
+
+            <div class="salle-detail-section">
+              <h2>Environnement</h2>
+              <p>Bienvenue à Barbery ! Située à seulement 5 minutes de Senlis, 3 minutes de l'autoroute A1, 30 minutes de la Porte de la Chapelle et 20 minutes de Compiègne, cette salle bénéficie d'un emplacement privilégié.</p>
+            </div>
+
+            <div class="salle-detail-section">
+              <h2>Capacité des salles</h2>
+              <p>Des espaces privés sont disponibles pour vos réceptions. Vous pouvez louer la grange et ses espaces extérieurs, ou la grange avec les espaces extérieurs plus un espace cocktail couvert (pour cocktails, vin d'honneur, cérémonies).</p>
+              
+              <div class="salle-capacities">
+                <div class="salle-capacity-card">
+                  <h3>Grange</h3>
+                  <p><strong>Superficie :</strong> 450m²</p>
+                  <p><strong>Capacité assise :</strong> 100-400 personnes</p>
+                  <p><strong>Capacité debout :</strong> 200-600 personnes</p>
+                  <p><strong>Location de salle seule :</strong> Oui</p>
+                  <div class="salle-capacity-price">À partir de 4 200 € TTC</div>
+                </div>
+
+                <div class="salle-capacity-card">
+                  <h3>Grange + Espace cocktail couvert</h3>
+                  <p><strong>Superficie :</strong> 650m²</p>
+                  <p><strong>Capacité assise :</strong> 100-400 personnes</p>
+                  <p><strong>Capacité debout :</strong> 100-400 personnes</p>
+                  <p><strong>Location de salle seule :</strong> Oui</p>
+                  <div class="salle-capacity-price">À partir de 4 800 € TTC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-container">
+        <h2 class="contact-form-title">À propos de votre événement</h2>
+        <form class="contact-form" action="#">
+          <div class="form-group">
+            <label for="nom-contact">Nom *</label>
+            <input type="text" id="nom-contact" name="nom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="prenom-contact">Prénom *</label>
+            <input type="text" id="prenom-contact" name="prenom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email-contact">Adresse e-mail *</label>
+            <input type="email" id="email-contact" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone-contact">Téléphone</label>
+            <input type="tel" id="phone-contact" name="phone" placeholder="06 00 00 00 00">
+          </div>
+
+          <div class="form-group">
+            <label for="nature">Nature *</label>
+            <select id="nature" name="nature" required>
+              <option value="">Sélectionnez</option>
+              <option value="mariage">Mariage</option>
+              <option value="anniversaire">Anniversaire</option>
+              <option value="seminaire">Séminaire</option>
+              <option value="conference">Conférence</option>
+              <option value="reception">Réception</option>
+              <option value="fete">Fête</option>
+              <option value="noel">Fête de Noël</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date *</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="heure-debut">Heure de début</label>
+            <input type="time" id="heure-debut" name="heure-debut">
+          </div>
+
+          <div class="form-group">
+            <label for="heure-fin">Heure de fin</label>
+            <input type="time" id="heure-fin" name="heure-fin">
+          </div>
+
+          <div class="form-group">
+            <label for="invites">Nombre d'invités *</label>
+            <input type="number" id="invites" name="invites" min="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Budget global estimé</label>
+            <input type="number" id="budget" name="budget" placeholder="€" min="0">
+          </div>
+
+          <div class="form-group">
+            <label for="details">Détail de votre demande</label>
+            <textarea id="details" name="details" placeholder="Bonjour, Nous vous avons découvert sur le site RECEPT et nous souhaiterions obtenir davantage d'informations..."></textarea>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="newsletter-contact" name="newsletter" checked>
+            <label for="newsletter-contact">J'accepte de recevoir la newsletter</label>
+          </div>
+
+          <div class="form-checkbox">
+            <input type="checkbox" id="partners-contact" name="partners" checked>
+            <label for="partners-contact">J'accepte de recevoir les communications du Groupe RECEPT et de ses partenaires</label>
+          </div>
+
+          <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">RECEPT</div>
+        <p style="color: #cccccc; margin-bottom: 20px;">Votre plateforme de référence pour la location de salles d'événements.</p>
+        <div class="footer-social">
+          <a href="#">📘</a>
+          <a href="#">📷</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Informations</h3>
+        <ul>
+          <li><a href="About.html">À propos</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">CGU</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="Voir salle .html">Salles de mariage</a></li>
+          <li><a href="Voir salle .html">Salles de réception</a></li>
+          <li><a href="Voir salle .html">Salles de séminaire</a></li>
+          <li><a href="Voir salle .html">Salles de conférence</a></li>
+          <li><a href="Voir salle .html">Salles de fête</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Mon compte</h3>
+        <ul>
+          <li><a href="login.html">Connexion</a></li>
+          <li><a href="signup.html">Inscription</a></li>
+          <li><a href="Historique.html">Historique</a></li>
+          <li><a href="favoris.html">Mes favoris</a></li>
+          <li><a href="louees.html">Salles louées</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 RECEPT. Tous droits réservés. | Powered by RECEPT</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

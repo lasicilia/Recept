@@ -1,17 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historique</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historique - RECEPT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <nav>
+    <div class="nav-logo">RECEPT</div>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="Voir salle .html">Salles</a>
+      <a href="About.html">À propos</a>
+      <a href="Historique.html" class="active">Historique</a>
+      <a href="favoris.html">Favoris</a>
+      <a href="louees.html">Salles louées</a>
+    </div>
+    <div class="nav-actions">
+      <div class="favorite-icon">
+        <span>❤️</span>
+        <span class="favorite-count">0</span>
+      </div>
+      <a href="login.html" class="btn-login">Connexion</a>
+      <a href="signup.html" class="btn-register">Inscription</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Historique des salles visitées</h1>
+    <p>Retrouvez toutes les salles que vous avez consultées</p>
+  </div>
+
+  <div class="page-content">
+    <div class="products-container">
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/table-setting-791148.jpg" alt="Salle de réception">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de réception</div>
+          <div class="product-location">Paris, Île-de-France</div>
+          <div class="product-vip">VIP</div>
+          <div class="product-price">À partir de 2 500 €</div>
+          <div style="font-size: 0.85rem; color: var(--subtext-color); margin-top: 10px;">Consultée le 15/11/2025</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/wedding-1610690.jpg" alt="Salle de mariage">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de mariage</div>
+          <div class="product-location">Lyon, Rhône</div>
+          <div class="product-normal">Normal</div>
+          <div class="product-price">À partir de 1 800 €</div>
+          <div style="font-size: 0.85rem; color: var(--subtext-color); margin-top: 10px;">Consultée le 14/11/2025</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/meeting-4565703.jpg" alt="Salle de séminaire">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de séminaire</div>
+          <div class="product-location">Marseille, Bouches-du-Rhône</div>
+          <div class="product-vip">VIP</div>
+          <div class="product-price">À partir de 1 200 €</div>
+          <div style="font-size: 0.85rem; color: var(--subtext-color); margin-top: 10px;">Consultée le 13/11/2025</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/banquet-2945619.jpg" alt="Salle de banquet">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de banquet</div>
+          <div class="product-location">Toulouse, Haute-Garonne</div>
+          <div class="product-normal">Normal</div>
+          <div class="product-price">À partir de 2 000 €</div>
+          <div style="font-size: 0.85rem; color: var(--subtext-color); margin-top: 10px;">Consultée le 12/11/2025</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">RECEPT</div>
+        <p style="color: #cccccc; margin-bottom: 20px;">Votre plateforme de référence pour la location de salles d'événements.</p>
+        <div class="footer-social">
+          <a href="#">📘</a>
+          <a href="#">📷</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Informations</h3>
+        <ul>
+          <li><a href="About.html">À propos</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">CGU</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="Voir salle .html">Salles de mariage</a></li>
+          <li><a href="Voir salle .html">Salles de réception</a></li>
+          <li><a href="Voir salle .html">Salles de séminaire</a></li>
+          <li><a href="Voir salle .html">Salles de conférence</a></li>
+          <li><a href="Voir salle .html">Salles de fête</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Mon compte</h3>
+        <ul>
+          <li><a href="login.html">Connexion</a></li>
+          <li><a href="signup.html">Inscription</a></li>
+          <li><a href="Historique.html">Historique</a></li>
+          <li><a href="favoris.html">Mes favoris</a></li>
+          <li><a href="louees.html">Salles louées</a></li>
+        </ul>
+      </div>
+    </div>
     
+    <div class="footer-bottom">
+      <p>© 2025 RECEPT. Tous droits réservés. | Powered by RECEPT</p>
+    </div>
+  </footer>
+
 </body>
 </html>

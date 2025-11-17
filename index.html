@@ -1,10 +1,10 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RECEPT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>RECEPT - Location de salle pour votre événement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,33 +13,211 @@
     <div class="nav-logo">RECEPT</div>
 
     <div class="nav-links">
-      <a href="#">Accueil</a>
-      <a href="#">À propos</a>
-      <a href="#">Voir salles</a>
-      <a href="#">Historique</a>
+      <a href="index.html" class="active">Accueil</a>
+      <a href="Voir salle .html">Salles</a>
+      <a href="About.html">À propos</a>
+      <a href="Historique.html">Historique</a>
+      <a href="favoris.html">Favoris</a>
+      <a href="louees.html">Salles louées</a>
     </div>
 
-    <button class="btn-register">Register</button>
+    <div class="nav-actions">
+      <div class="favorite-icon">
+        <span>❤️</span>
+        <span class="favorite-count">0</span>
+      </div>
+      <a href="login.html" class="btn-login">Connexion</a>
+      <a href="signup.html" class="btn-register">Inscription</a>
+    </div>
   </nav>
 
-  <section class="section-main">
-    <div class="main-content">
-      <h1 class="text">Bienvenue sur RECEPT</h1>
-      <p class="sub-text">Réservez votre salle idéale en un clic.</p>
-      <p class="sub-text">Découvrez nos meilleurs espaces pour vos événements.</p>
+  <section class="hero-section">
+    <div class="hero-background">
+      <img src="./Images/wedding-1610690.jpg" alt="Événement">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Location de salle pour votre événement</h1>
+      <p>Trouvez la salle parfaite pour tous vos événements</p>
+      
+      <div class="search-container">
+        <form class="search-form" action="Voir salle .html">
+          <div class="search-field">
+            <label for="event-type">Quel événement ? *</label>
+            <select id="event-type" name="event-type" required>
+              <option value="">Sélectionnez un type</option>
+              <option value="mariage">Mariage</option>
+              <option value="anniversaire">Anniversaire</option>
+              <option value="seminaire">Séminaire</option>
+              <option value="conference">Conférence</option>
+              <option value="reception">Réception</option>
+              <option value="fete">Fête</option>
+              <option value="reunion">Réunion</option>
+            </select>
+          </div>
+          
+          <div class="search-field">
+            <label for="location">Où ? Ex : Rhône / Lyon *</label>
+            <input type="text" id="location" name="location" placeholder="Ex: Paris, Lyon, Marseille..." required>
+          </div>
+          
+          <div class="search-field">
+            <label for="salle-type">Type de salle</label>
+            <select id="salle-type" name="salle-type">
+              <option value="">Tous types</option>
+              <option value="reception">Salle de réception</option>
+              <option value="mariage">Salle de mariage</option>
+              <option value="seminaire">Salle de séminaire</option>
+              <option value="conference">Salle de conférence</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="search-btn">🔍</button>
+        </form>
+        <p class="search-info">La demande de renseignements est <strong>100% gratuite !</strong></p>
+      </div>
+    </div>
+  </section>
 
-      <div class="input-container">
-        <div class="input-main">
-          <input type="text" placeholder="Recherchez un endroit, un type d'événement..." />
+  <section class="suggestions-section">
+    <h2 class="suggestions-title">Nos suggestions</h2>
+    <div class="suggestions-grid">
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/table-setting-791148.jpg" alt="Salle de réception">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de réception</div>
+          <div class="product-location">Paris, Île-de-France</div>
+          <div class="product-vip">VIP</div>
+          <div class="product-price">À partir de 2 500 €</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/wedding-1610690.jpg" alt="Salle de mariage">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de mariage</div>
+          <div class="product-location">Lyon, Rhône</div>
+          <div class="product-normal">Normal</div>
+          <div class="product-price">À partir de 1 800 €</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/meeting-4565703.jpg" alt="Salle de séminaire">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de séminaire</div>
+          <div class="product-location">Marseille, Bouches-du-Rhône</div>
+          <div class="product-vip">VIP</div>
+          <div class="product-price">À partir de 1 200 €</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/banquet-2945619.jpg" alt="Salle de banquet">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de banquet</div>
+          <div class="product-location">Toulouse, Haute-Garonne</div>
+          <div class="product-normal">Normal</div>
+          <div class="product-price">À partir de 2 000 €</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/table-4736377.jpg" alt="Salle de fête">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de fête</div>
+          <div class="product-location">Nice, Alpes-Maritimes</div>
+          <div class="product-normal">Normal</div>
+          <div class="product-price">À partir de 1 500 €</div>
+          <button class="btn-reserve">Voir plus</button>
+        </div>
+      </div>
+
+      <div class="product-items" onclick="window.location.href='salle-detail.html'">
+        <div class="product-image">
+          <img src="./Images/room-2192484.jpg" alt="Salle de conférence">
+          <div class="product-favorite">❤️</div>
+        </div>
+        <div class="product-details">
+          <div class="product-category">Salle de conférence</div>
+          <div class="product-location">Bordeaux, Gironde</div>
+          <div class="product-vip">VIP</div>
+          <div class="product-price">À partir de 1 800 €</div>
+          <button class="btn-reserve">Voir plus</button>
         </div>
       </div>
     </div>
-
-    <div class="main-tof">
-      <img src="./Images/slide-02 - Copie.jpg" alt="bannière salle">
-      <div class="overlay-text">Votre confort, notre priorité.</div>
-    </div>
   </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-logo">RECEPT</div>
+        <p style="color: #cccccc; margin-bottom: 20px;">Votre plateforme de référence pour la location de salles d'événements.</p>
+        <div class="footer-social">
+          <a href="#">📘</a>
+          <a href="#">📷</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Informations</h3>
+        <ul>
+          <li><a href="About.html">À propos</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">CGU</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Catégories</h3>
+        <ul>
+          <li><a href="Voir salle .html">Salles de mariage</a></li>
+          <li><a href="Voir salle .html">Salles de réception</a></li>
+          <li><a href="Voir salle .html">Salles de séminaire</a></li>
+          <li><a href="Voir salle .html">Salles de conférence</a></li>
+          <li><a href="Voir salle .html">Salles de fête</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Mon compte</h3>
+        <ul>
+          <li><a href="login.html">Connexion</a></li>
+          <li><a href="signup.html">Inscription</a></li>
+          <li><a href="Historique.html">Historique</a></li>
+          <li><a href="favoris.html">Mes favoris</a></li>
+          <li><a href="louees.html">Salles louées</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 RECEPT. Tous droits réservés. | Powered by RECEPT</p>
+    </div>
+  </footer>
 
 </body>
 </html>

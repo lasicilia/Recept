@@ -1,75 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>À propos - RECEPT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
+
     <nav>
-        <h3>À propos</h3>
+        <div class="nav-logo">RECEPT</div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="Voir salle .html">Salles</a>
+            <a href="About.html" class="active">À propos</a>
+            <a href="Historique.html">Historique</a>
+            <a href="favoris.html">Favoris</a>
+            <a href="louees.html">Salles louées</a>
+        </div>
+        <div class="nav-actions">
+            <div class="favorite-icon">
+                <span>❤️</span>
+                <span class="favorite-count">0</span>
+            </div>
+            <a href="login.html" class="btn-login">Connexion</a>
+            <a href="signup.html" class="btn-register">Inscription</a>
+        </div>
     </nav>
 
-    
-    <section class="main-description">
-        <div class="description">
+    <section class="section-salle">
+        <div class="salle-main">
             <h1 class="text">RECEPT</h1>
-            <p class="sub-text">
-               
-            </p>
-            RECEPT est né du désir d’unir information, expérience et innovation pour offrir une réelle valeur ajoutée.
-            Nous privilégions la clarté, la pertinence et l’accessibilité dans tout ce que nous faisons.
-
-           Notre équipe s’engage à proposer un contenu précis, simple et inspirant.
-           À travers chaque projet, nous cherchons à créer une connexion authentique, portée par la rigueur, la curiosité et la créativité.
+            <div class="section-description">
+                RECEPT est né du désir d'unir information, expérience et innovation pour offrir une réelle valeur ajoutée.
+                Nous privilégions la clarté, la pertinence et l'accessibilité dans tout ce que nous faisons.
+            </div>
         </div>
     </section>
 
-    
-    <section class="main-observation">
-        <div class="observation">
-            <h1 class="text">Observation</h1>
-            <p class="sub-text1">
-               Dans cette section, nous publions des observations détaillées et des analyses rigoureuses. Chaque élément est examiné avec soin, documenté et contextualisé pour offrir une lecture claire et utile. Nos résultats permettent de comprendre rapidement les points clés tout en donnant la possibilité d’explorer les données plus en profondeur. Nous expliquons et interprétons les faits pour fournir une base solide aux décisions éclairées et à la curiosité intellectuelle, avec transparence et exigence.
-            </p>
+    <section class="section-salle" style="background-color: var(--white); padding: 40px 5%; margin-top: 40px; border-radius: 15px; max-width: 1200px; margin-left: auto; margin-right: auto;">
+        <div class="salle-main">
+            <h1 class="text" style="font-size: 2rem;">Notre mission</h1>
+            <div class="section-description" style="text-align: left; max-width: 800px; margin: 0 auto;">
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    Notre équipe s'engage à proposer un contenu précis, simple et inspirant.
+                    À travers chaque projet, nous cherchons à créer une connexion authentique, portée par la rigueur, la curiosité et la créativité.
+                </p>
+                <p style="margin-bottom: 20px; line-height: 1.8;">
+                    RECEPT facilite la recherche et la réservation de salles pour tous types d'événements. 
+                    Que vous organisiez un mariage, un séminaire, une conférence ou une fête, nous mettons à votre disposition 
+                    une plateforme intuitive et complète pour trouver la salle idéale.
+                </p>
+                <p style="line-height: 1.8;">
+                    Nous croyons que chaque événement mérite le lieu parfait. C'est pourquoi nous travaillons sans relâche 
+                    pour vous offrir une expérience utilisateur exceptionnelle et une sélection de salles de qualité.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-salle" style="margin-top: 40px;">
+        <div class="salle-main">
+            <h1 class="text" style="font-size: 2rem;">Observation</h1>
+            <div class="section-description" style="text-align: left; max-width: 800px; margin: 0 auto; line-height: 1.8;">
+                <p>
+                    Dans cette section, nous publions des observations détaillées et des analyses rigoureuses. 
+                    Chaque élément est examiné avec soin, documenté et contextualisé pour offrir une lecture claire et utile. 
+                    Nos résultats permettent de comprendre rapidement les points clés tout en donnant la possibilité d'explorer 
+                    les données plus en profondeur. Nous expliquons et interprétons les faits pour fournir une base solide aux 
+                    décisions éclairées et à la curiosité intellectuelle, avec transparence et exigence.
+                </p>
+            </div>
+            <div style="margin-top: 30px;">
+                <a href="index.html" class="btn-reserve">Retour à l'accueil</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">RECEPT</div>
+                <p style="color: #cccccc; margin-bottom: 20px;">Votre plateforme de référence pour la location de salles d'événements.</p>
+                <div class="footer-social">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                </div>
+            </div>
             
-            <button class="btn-register">Retour</button>
+            <div class="footer-section">
+                <h3>Informations</h3>
+                <ul>
+                    <li><a href="About.html">À propos</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">CGU</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Catégories</h3>
+                <ul>
+                    <li><a href="Voir salle .html">Salles de mariage</a></li>
+                    <li><a href="Voir salle .html">Salles de réception</a></li>
+                    <li><a href="Voir salle .html">Salles de séminaire</a></li>
+                    <li><a href="Voir salle .html">Salles de conférence</a></li>
+                    <li><a href="Voir salle .html">Salles de fête</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Mon compte</h3>
+                <ul>
+                    <li><a href="login.html">Connexion</a></li>
+                    <li><a href="signup.html">Inscription</a></li>
+                    <li><a href="Historique.html">Historique</a></li>
+                    <li><a href="favoris.html">Mes favoris</a></li>
+                    <li><a href="louees.html">Salles louées</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
+        
+        <div class="footer-bottom">
+            <p>© 2025 RECEPT. Tous droits réservés. | Powered by RECEPT</p>
+        </div>
+    </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-</html>
-
-echo "# Recept" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/lasicilia/Recept.git
-git push -u origin main
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
